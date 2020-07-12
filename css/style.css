@@ -1,4 +1,4 @@
-/* CSS By Andy Jiang */
+/* CSS By Andy Jiang - Pig Latin Web Translator*/
 
 
 /* Date: 5/26/20 */
@@ -16,7 +16,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #777777;
-    background: url(../img/body-bg.png) no-repeat center;
+    background-color: #fafafa;
 }
 
 @media (max-width: 992px) {
@@ -3287,6 +3287,111 @@ h6 {
 
 
 /* CONTACT FORM */
+
+
+/* Pig Latin Web Translator */
+
+.pig-latin .main_title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 500px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.code-input-forms {
+    margin-top: 100px;
+}
+
+.convert_btn {
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 0px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 46px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 7px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-color: #38a4ff;
+    border: double 2px transparent;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+}
+
+.convert_btn:hover {
+    background-color: #2f84ca;
+    color: #fff;
+}
+
+.convert_btn span {
+    padding: 0 45px 0 45px;
+}
+
+
+/* Pig Latin Web Translator */
+
+
+/* How It Works */
+
+.how-it-works {
+    margin-top: 100px;
+}
+
+.how-it-works .main_title {
+    margin-bottom: 30px;
+}
+
+.steps-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+
+/* How It Works */
+
+
+/* Pig Latin Rules */
+
+.pig-latin-rules {
+    margin-top: 200px;
+}
+
+.pig-latin-rules .main_title {
+    margin-bottom: 50px;
+}
+
+.pig-latin-rules p {
+    padding-left: 5px;
+}
+
+.pig-latin-rules h5,
+.pig-latin-rules p {
+    display: inline;
+}
+
+.pig-latin-rules .rules {
+    margin-bottom: 10px;
+}
+
+
+/* Pig Latin Rules */
 
 
 /* SIZING FOR OTHER SCREENS (NAV/HEADER) */

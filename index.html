@@ -36,11 +36,13 @@
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
     <!--================ NAVIGATION AREA =================-->
+    <!--
     <header class="header_area" id="header">
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -63,36 +65,124 @@
             </nav>
         </div>
     </header>
-
-    <!--================ HOME AREA =================-->
-    <section class="home_banner_area">
-        <div class="banner_inner">
+    -->
+    <!--================ INTRO AREA =================-->
+    <!--
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="banner_content">
-                            <h3 class="text-uppercase">Hello</h3>
-                            <h1 class="text-uppercase">I am Andy Jiang</h1>
-                            <div class="rotating-text">
-                                <h5>
-                                    <span class="text-uppercase">Full Stack Developer</span>
-                                    <span class="text-uppercase">Mobile App Developer</span>
-                                    <span class="text-uppercase">UI Designer</span>
-                                    <span class="text-uppercase">Builder</span>
-                                    <span class="text-uppercase">Student</span>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="home_right_img">
-                            <img class="" src="img/banner/home-right.png" alt="">
-                        </div>
+                <div class="banner_content text-center">
+                    <h2>Dev</h2>
+                    <div class="page_link">
+                        <a href="andyjiang.me/">Home</a>
+                        <a href="dev.andyjiang.me/">Dev</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    -->
+    <!--================ PIG LATIN TRANSLATOR =================-->
+    <section class="pig-latin">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="main_title">
+                        <h2>Pig-Latin Web Page Translator</h2>
+                    </div>
+                    <p class="des">Translate HTML files to working Pig Latin HTML file using standard translation rules.</p>
+                </div>
+            </div>
+
+            <form class="code-input-forms row">
+                <div class="col-lg-6">
+
+                    <textarea placeholder="Original HTML file"></textarea>
+
+                    <a class="convert_btn" href="#"><span>Convert</span></a>
+                </div>
+                <div class="col-lg-6">
+
+                    <textarea placeholder="Pig-Latin HTML file" readonly></textarea>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!--================ HOW IT WORKS =================-->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main_title text-left">
+                        <h2>How It Works</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="steps-img" src="img/steps/1.png"></img>
+                    <div>
+                        <p class="des">Scans through file and ignore HTML tags, only translating the content to Pig Latin.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="steps-img" src="img/steps/2.png"></img>
+                    <p class="des">Skip pass items that fits the pattern of &text;. These are HTML character entitites' name and must be kept the same.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="steps-img" src="img/steps/3.png"></img>
+                    <p class="des">Determine content of the HTML file that is visible to users and translate it based on Pig Latin rules</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--================ PIG LATIN RULES =================-->
+    <section class="pig-latin-rules">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main_title text-left">
+                        <h2>Pig Latin Rules</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rules">
+                        <h5>1. </h5>
+                        <p class="des">A word to be translated is a consecutive sequence of letters (a-z, A-Z) or apostrophes, containing at least one vowel or y in a vowel position.</p>
+                    </div>
+                    <div class="rules">
+                        <h5>2. </h5>
+                        <p class="des">If a word starts with a vowel, the Pig Latin version is the original word with "way" added to the end</p>
+                    </div>
+                    <div class="rules">
+                        <h5>3. </h5>
+                        <p class="des">If a word starts with a consonant, the Pig Latin version transfers all consonants up to the first vowel to the end of the word, adding "ay" to the end.</p>
+                    </div>
+                    <div class="rules">
+                        <h5>4. </h5>
+                        <p class="des">The letter 'y' should be treated as a consonant if it is the first letter of a word, but treated as a vowel otherwise.</p>
+                    </div>
+                    <div class="rules">
+                        <h5>5. </h5>
+                        <p class="des">If the original word is capitalized, the new Pig Latin version of the word should be capitalized in the first letter.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
 
     <!--================ ABOUT ME AREA =================-->
     <!--
@@ -598,6 +688,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
+
     <script>
         document.getElementById('language-percent').onmouseover = function() {
             document.getElementById('prog-language').style.display = 'block';
