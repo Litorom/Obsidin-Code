@@ -97,13 +97,13 @@
             <form class="code-input-forms row">
                 <div class="col-lg-6">
                     <div class="text-shadow">
-                        <textarea id="original-file" placeholder="Original HTML file"></textarea>
+                        <textarea id="original-txt" placeholder="Original HTML file"></textarea>
                     </div>
-                    <a class="convert_btn" href="#"><span>Convert</span></a>
+                    <button onclick="onConvertClicked()" class="convert_btn" type='button'><span>Convert</span></button>
                 </div>
                 <div class="col-lg-6">
                     <div class="text-shadow">
-                        <textarea placeholder="Pig-Latin HTML file" readonly></textarea>
+                        <textarea id="pig-latin-txt" placeholder="Pig-Latin HTML file" readonly></textarea>
                     </div>
                 </div>
             </form>
@@ -689,81 +689,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
+    <script src="translate.js"></script>
 
-    <script>
-        document.getElementById('language-percent').onmouseover = function() {
-            document.getElementById('prog-language').style.display = 'block';
-            document.getElementById('prog-language').style.marginTop = 'auto';
-            document.getElementById('language-percent').style.marginTop = '0';
-        }
-        document.getElementById('language-percent').onmouseout = function() {
-            document.getElementById('prog-language').style.display = 'none';
-            document.getElementById('language-percent').style.marginTop = '0';
-            document.getElementById('language-percent').style.marginTop = 'auto';
-        }
-
-        document.getElementById('language-percent2').onmouseover = function() {
-            document.getElementById('prog-language2').style.display = 'block';
-            document.getElementById('prog-language2').style.marginTop = 'auto';
-            document.getElementById('language-percent2').style.marginTop = '0';
-        }
-        document.getElementById('language-percent2').onmouseout = function() {
-            document.getElementById('prog-language2').style.display = 'none';
-            document.getElementById('language-percent2').style.marginTop = '0';
-            document.getElementById('language-percent2').style.marginTop = 'auto';
-        }
-
-        document.getElementById('language-percent3').onmouseover = function() {
-            document.getElementById('prog-language3').style.display = 'block';
-            document.getElementById('prog-language3').style.marginTop = 'auto';
-            document.getElementById('language-percent3').style.marginTop = '0';
-        }
-        document.getElementById('language-percent3').onmouseout = function() {
-            document.getElementById('prog-language3').style.display = 'none';
-            document.getElementById('language-percent3').style.marginTop = '0';
-            document.getElementById('language-percent3').style.marginTop = 'auto';
-        }
-        document.getElementById('language-percent4').onmouseover = function() {
-            document.getElementById('prog-language4').style.display = 'block';
-            document.getElementById('prog-language4').style.marginTop = 'auto';
-            document.getElementById('language-percent4').style.marginTop = '0';
-        }
-        document.getElementById('language-percent4').onmouseout = function() {
-            document.getElementById('prog-language4').style.display = 'none';
-            document.getElementById('language-percent4').style.marginTop = '0';
-            document.getElementById('language-percent4').style.marginTop = 'auto';
-        }
-        document.getElementById('language-percent5').onmouseover = function() {
-            document.getElementById('prog-language5').style.display = 'block';
-            document.getElementById('prog-language5').style.marginTop = 'auto';
-            document.getElementById('language-percent5').style.marginTop = '0';
-        }
-        document.getElementById('language-percent5').onmouseout = function() {
-            document.getElementById('prog-language5').style.display = 'none';
-            document.getElementById('language-percent5').style.marginTop = '0';
-            document.getElementById('language-percent5').style.marginTop = 'auto';
-        }
-        document.getElementById('language-percent6').onmouseover = function() {
-            document.getElementById('prog-language6').style.display = 'block';
-            document.getElementById('prog-language6').style.marginTop = 'auto';
-            document.getElementById('language-percent6').style.marginTop = '0';
-        }
-        document.getElementById('language-percent6').onmouseout = function() {
-            document.getElementById('prog-language6').style.display = 'none';
-            document.getElementById('language-percent6').style.marginTop = '0';
-            document.getElementById('language-percent6').style.marginTop = 'auto';
-        }
-        document.getElementById('language-percent7').onmouseover = function() {
-            document.getElementById('prog-language7').style.display = 'block';
-            document.getElementById('prog-language7').style.marginTop = 'auto';
-            document.getElementById('language-percent7').style.marginTop = '0';
-        }
-        document.getElementById('language-percent7').onmouseout = function() {
-            document.getElementById('prog-language7').style.display = 'none';
-            document.getElementById('language-percent7').style.marginTop = '0';
-            document.getElementById('language-percent7').style.marginTop = 'auto';
-        }
-    </script>
 </body>
 
 
