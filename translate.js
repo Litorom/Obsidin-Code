@@ -90,6 +90,15 @@ function pigWord(word) {
     } else {
         var wordTilVowel = word.substring(vowelPos);
         var cost = word.substring(0, vowelPos);
+        if (cost.equals("h") || cost.equals("w")) {
+            cost = "ox";
+        }
+        else if (cost.equals("g") || cost.equals("p")) {
+            cost = "ob";
+        }
+        else if (cost.equals("j")) {
+        cost = "koi";
+        }
         pigLatin = wordTilVowel + cost + "xii";
     }
 
