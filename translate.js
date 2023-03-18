@@ -90,16 +90,19 @@ function pigWord(word) {
     } else {
         var wordTilVowel = word.substring(vowelPos);
         var cost = word.substring(0, vowelPos);
-        if (cost == 'h' || cost == 'w') {
+        if (cost == 'h' || cost == 'H') {
             cost = "ox";
         }
-        else if (cost == 'g' || cost == 'p') {
+        else if (cost == 'g' || cost == 'G') {
             cost = "ob";
         }
-        else if (cost == 'j' || cost == 'd') {
-        cost = "koi";
+        else if (cost == 'j' || cost == 'J') {
+            cost = "koi";
         }
-        pigLatin = wordTilVowel + cost + "xii";
+        else if (cost == 'w' || cost == 'W') {
+            cost = "vio";
+        }
+        pigLatin = wordTilVowel + cost + "ixo";
     }
 
     if (word.charAt(0) != word.charAt(0).toLowerCase()) {
