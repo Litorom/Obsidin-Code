@@ -86,11 +86,11 @@ function pigWord(word) {
     var vowelPos = firstVowel(word);
 
     if (vowelPos == 0) {
-        pigLatin = word + "way";
+        pigLatin = word + "ki";
     } else {
         var wordTilVowel = word.substring(vowelPos);
         var cost = word.substring(0, vowelPos);
-        pigLatin = wordTilVowel + cost + "ay";
+        pigLatin = wordTilVowel + cost + "xii";
     }
 
     if (word.charAt(0) != word.charAt(0).toLowerCase()) {
